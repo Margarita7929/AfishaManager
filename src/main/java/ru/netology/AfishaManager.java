@@ -5,12 +5,12 @@ public class AfishaManager {
     private int limit;
 
     public AfishaManager(int limit) {
-         this.limit = limit;
-     }
+        this.limit = limit;
+    }
 
-         public AfishaManager() {
-             limit = 10;
-         }
+    public AfishaManager() {
+        limit = 10;
+    }
 
 
     private String[] namesOfFilms = new String[0];
@@ -28,7 +28,7 @@ public class AfishaManager {
 
     public String[] findLast() {
         int resultLength;
-        if(namesOfFilms.length < limit) {
+        if (namesOfFilms.length < limit) {
             resultLength = namesOfFilms.length;
         } else {
             resultLength = limit;

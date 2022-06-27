@@ -74,6 +74,7 @@ public class AfishaManagerTest {
         assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void getOneAboveStandardOutPut() {
         AfishaManager manager = new AfishaManager(11);
@@ -94,6 +95,7 @@ public class AfishaManagerTest {
         assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void oneBelowStandardOutPut() {
         AfishaManager manager = new AfishaManager(9);
@@ -113,6 +115,7 @@ public class AfishaManagerTest {
         assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void standardOutPutNineFilms() {
         AfishaManager manager = new AfishaManager();
@@ -148,11 +151,12 @@ public class AfishaManagerTest {
         manager.save("Ten");
         manager.save("Eleven");
         String[] actual = manager.findLast();
-        String[] expected = {"Eleven","Ten", "Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two"};
+        String[] expected = {"Eleven", "Ten", "Nine", "Eight", "Seven", "Six", "Five", "Four", "Three", "Two"};
 
         assertArrayEquals(expected, actual);
 
     }
+
     @Test
     public void oneOupPutFiveFilms() {
         AfishaManager manager = new AfishaManager(1);
